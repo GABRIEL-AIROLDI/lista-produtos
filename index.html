@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="lista">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-            <button class="comprar">Adicionar</button>
+    <div class="container" id="produto-lista">
+        <div class="produto" data-id="1">
+            <img src="https://www.cacaushow.com.br/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw77307398/large/1003536_1.png" class="ovo" alt=">
+            <h3 class="ovotitulo">Ovo cacau show la nut</h3>
+            <p class="preco">R$ 200,30</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
         </div>
-        
+        <div class="produto" data-id="2">
+            <img src="https://m.media-amazon.com/images/I/61aaR7BS2vL._AC_SX679_.jpg" class="ovo" alt="coelho lindt">
+            <h3 class="ovotitulo">coelho lindt</h3>
+            <p class="preco">R$ 399,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto" data-id="3">
+            <img src="https://kopenhagen.vtexassets.com/arquivos/ids/168066/Ovo-de-Pascoa-70--Cacau-Soul-Good-208G.png.png?v=638761918218300000" class="ovo" alt="ovo kopenhagen 70% cacau">
+        <h3 class="ovotitulo">Ovo Kopenhagen 70% cacau</h3>
+            <p class="preco">R$ 159,90</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
     </div>
 
-   <script src="./style.js"></script> 
+    <div class="listaC">
+        <div class="header">
+            <h1>Minha lista</h1>
+            <button class="comprar">Ver Carrinho</button>
+        </div>
+        <div id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+            <p id="total">Total: R$ 0,00</p>
+            <button id="finalizar-compra" style="display:none;">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
