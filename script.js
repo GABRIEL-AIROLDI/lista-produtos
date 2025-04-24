@@ -1,4 +1,4 @@
-// teste
+
 const produtos = document.querySelectorAll('.produto');
 const carrinhoContainer = document.getElementById('carrinho');
 const itensCarrinho = document.getElementById('itens-carrinho');

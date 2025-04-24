@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 12px;
     text-align: center;
     margin-top: 18.5vh; 
@@ -72,10 +72,14 @@ button:hover {
 .listaC {
     padding: 20px;
     margin-top: 10vh;
+    height: 100vh;
+    width: 25%;
+    float: left;
 }
 
 #carrinho {
     display: none;
+    height: 50vh;
 }
 @media (max-width: 768px) {
     #container {
