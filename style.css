@@ -2,10 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffd8;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #000000;
+background-color: 	#f5ffe4;
+    border: #000000;
 }
 
 #container {
-    background-color: aqua;
+    background-color: #ffffd8;
     width: 70%;
     height: 100vh;
     display: flex;
@@ -20,9 +29,10 @@ body {
     height: 65vh;
     float: left;
     width: 20%;
-    background: linear-gradient(to top, #ffffff, #bebebe);
+    background-color:beige;
+    border: 1px solid #333;
     border-radius: 10px;
-    box-shadow: 0px 0px 7px 0px #000;
+    box-shadow: 0px 0px 7px 0px #333;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -55,7 +65,7 @@ body {
 }
 
 button {
-    background-color: #ed0030;
+    background-color: rgb(16, 16, 255);
     color: white;
     border: none;
     border-radius: 5px;
@@ -66,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #d4002f;
+    background-color: rgb(16, 16, 255)
 }
 
 .listaC {
@@ -110,4 +120,36 @@ button:hover {
 
 #carrinho li {
     margin-bottom: 10px;
+    height: 95px;
+    display: block;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+#carrinho li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+#total{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    
+}
+.comprar{
+    background-color: rgb(16, 16, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+    align-items: center;
+    margin-left: auto;
 }

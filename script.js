@@ -9,8 +9,8 @@ const comprarButton = document.querySelector('.comprar');
 let carrinho = [];
 
 
-function adicionarAoCarrinho(id, nome, preco) {
-    carrinho.push({ id, nome, preco });
+function adicionarAoCarrinho(id, nome, preco,img) {
+    carrinho.push({ id, nome, preco, img });
     atualizarCarrinho();
 }
 
@@ -20,7 +20,9 @@ function atualizarCarrinho() {
     let total = 0;
     carrinho.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+        li.innerHTML = `<img src="${item.img}">
+                        <strong>${item.nome}</strong> <br> R$ ${item.preco.toFixed(2)}`;
+        //li.textContent = `${item.nome} <br> R$ ${item.preco.toFixed(2)}`;
         itensCarrinho.appendChild(li);
         total += item.preco;
     });
@@ -47,11 +49,12 @@ finalizarCompraButton.addEventListener('click', () => {
 
 produtos.forEach(produto => {
     const id = produto.dataset.id;
+    const img = produto.querySelector('img').src;
     const nome = produto.querySelector('.ovotitulo').textContent;
     const preco = parseFloat(produto.querySelector('.preco').textContent.replace('R$ ', '').replace(',', '.'));
 
     const botaoAdicionar = produto.querySelector('.adicionar');
     botaoAdicionar.addEventListener('click', () => {
-        adicionarAoCarrinho(id, nome, preco);
+        adicionarAoCarrinho(id, nome, preco,img);
     });
 });
