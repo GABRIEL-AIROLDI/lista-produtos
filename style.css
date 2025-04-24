@@ -18,6 +18,7 @@ body {
 
 #produto, .produto {
     height: 65vh;
+    float: left;
     width: 20%;
     background: linear-gradient(to top, #ffffff, #bebebe);
     border-radius: 10px;
@@ -76,7 +77,6 @@ button:hover {
 #carrinho {
     display: none;
 }
-// media queries 
 @media (max-width: 768px) {
     #container {
         width: 90%; 
