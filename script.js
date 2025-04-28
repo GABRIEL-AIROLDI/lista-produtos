@@ -56,15 +56,9 @@ produtos.forEach(produto => {
     const botaoAdicionar = produto.querySelector('.adicionar');
     botaoAdicionar.addEventListener('click', () => {
         adicionarAoCarrinho(id, nome, preco,img);
-    });
-    
-		const botao = document.getElementById ('cont')
-        const reset = document.getElementById ('cont1')
-        let count = 0;
-        let intervalId =0;
+        carrinhoContainer.style.display = 'block';
 
-        
-        
-		
-		
+
+    });
+    	
 });

@@ -154,17 +154,3 @@ button:hover {
     margin-left: auto;
     justify-content: center;
 }
-#cont{
-    background-color: black;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%; 
-    color: white;
-}
-cont1{
-    background-color: black;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%; 
-    color: white;
-}
